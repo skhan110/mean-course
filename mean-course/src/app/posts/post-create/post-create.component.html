@@ -1,4 +1,8 @@
-<textarea rows="6" columns="6" [(ngModel)]="enteredValue"> Type here... </textarea>
-<hr>
-<button (click)="onAddPost()">Click to change</button>
+<mat-card>
+<mat-form-field>
+  <textarea matInput rows="6" [(ngModel)]="enteredValue"></textarea>
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="onAddPost()">Click to change</button>
+</mat-card>
+<br><br>
 <p>{{ newPost }}</p>
